@@ -31,3 +31,357 @@ INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (e
 2023.09.01 09:05:52 INFO  no build target found for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala. Using presentation compiler with project's scala-library version: 3.3.0
 2023.09.01 09:06:05 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/scie/SCIE.scala
 2023.09.01 13:08:24 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/CSR.scala
+2023.09.01 13:42:55 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 01, 2023 1:42:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 01, 2023 1:42:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 01, 2023 1:42:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 01, 2023 1:42:55 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 01, 2023 1:42:55 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.009s)
+Sep 01, 2023 1:42:55 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 01, 2023 1:42:55 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.01 13:42:55 INFO  time: initialize in 0.24s
+2023.09.01 13:42:55 WARN  Build server is not auto-connectable.
+2023.09.01 13:42:55 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:42:56 INFO  no build target found for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala. Using presentation compiler with project's scala-library version: 3.3.0
+Sep 01, 2023 1:42:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.09.01 13:42:57 INFO  time: code lens generation in 1.07s
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Sep 01, 2023 1:43:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43
+2023.09.01 13:43:20 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+Sep 01, 2023 1:43:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 55
+2023.09.01 13:43:22 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:43:22 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:43:23 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:43:23 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:43:48 INFO  Shutting down server
+2023.09.01 13:43:48 INFO  shutting down Metals
+2023.09.01 13:43:48 INFO  Exiting server
+2023.09.01 13:43:53 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 01, 2023 1:43:53 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 01, 2023 1:43:53 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 01, 2023 1:43:53 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 01, 2023 1:43:53 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 01, 2023 1:43:53 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 01, 2023 1:43:53 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 01, 2023 1:43:53 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.01 13:43:53 INFO  time: initialize in 0.26s
+Sep 01, 2023 1:43:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 01, 2023 1:43:53 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.01 13:43:53 WARN  Build server is not auto-connectable.
+2023.09.01 13:43:53 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:43:54 INFO  no build target found for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala. Using presentation compiler with project's scala-library version: 3.3.0
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2023.09.01 13:43:57 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:43:57 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:44:06 INFO  running '/usr/lib/jvm/java-8-openjdk/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals7865162283657118237/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.09.01 13:44:06 ERROR Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dsun.java2d.xrender=true
+2023.09.01 13:44:06 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/metals.sbt
+2023.09.01 13:44:06 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/metals.sbt
+2023.09.01 13:44:06 INFO  skipping build import with status 'Started'
+2023.09.01 13:44:07 INFO  [info] welcome to sbt 1.3.13 (Oracle Corporation Java 1.8.0_382)
+2023.09.01 13:44:07 INFO  [info] loading settings for project rocket-chip-build-build-build from metals.sbt ...
+2023.09.01 13:44:08 INFO  [info] loading project definition from /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/project
+2023.09.01 13:44:11 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 13:44:13 INFO  [info] loading settings for project rocket-chip-build-build from metals.sbt ...
+2023.09.01 13:44:13 INFO  [info] loading project definition from /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project
+2023.09.01 13:44:18 INFO  [success] Generated .bloop/rocket-chip-build-build.json
+2023.09.01 13:44:18 INFO  [success] Total time: 5 s, completed Sep 1, 2023 1:44:18 PM
+2023.09.01 13:44:18 INFO  [info] loading settings for project rocket-chip-build from plugins.sbt,metals.sbt ...
+2023.09.01 13:44:18 INFO  [info] loading project definition from /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project
+2023.09.01 13:44:18 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2023.09.01 13:44:38 INFO  [error] Couldn't run bloopGenerate. Cause: Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task(_)), tpe=Error, msg=None, causes=List(Incomplete(node=Some(Task((tags: Map(Tag(update) -> 1, Tag(network) -> 1), taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/,rocket-chip-build)), Zero, Zero, Zero),updateClassifiers)))), tpe=Error, msg=None, causes=List(), directCause=Some(lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.12/sbt_1.0/0.9.3/srcs/sbt-git-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.12/sbt_1.0/0.9.3/srcs/sbt-git-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.12/sbt_1.0/0.6.2/srcs/sbt-ghpages-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.12/sbt_1.0/0.6.2/srcs/sbt-ghpages-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.12/sbt_1.0/1.4.2/srcs/sbt-web-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.12/sbt_1.0/1.4.2/srcs/sbt-web-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.10.0/srcs/sbt-buildinfo-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.10.0/srcs/sbt-buildinfo-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.12/sbt_1.0/1.3.1/srcs/sbt-site-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.12/sbt_1.0/1.3.1/srcs/sbt-site-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe/sbt-mima-plugin/scala_2.12/sbt_1.0/0.6.1/srcs/sbt-mima-plugin-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe/sbt-mima-plugin/scala_2.12/sbt_1.0/0.6.1/srcs/sbt-mima-plugin-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.lightbend.paradox/sbt-paradox/scala_2.12/sbt_1.0/0.3.0/srcs/sbt-paradox-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.lightbend.paradox/sbt-paradox/scala_2.12/sbt_1.0/0.3.0/srcs/sbt-paradox-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.15.0/srcs/sbt-assembly-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.15.0/srcs/sbt-assembly-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.1/srcs/sbt-unidoc-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.1/srcs/sbt-unidoc-sources.jar
+2023.09.01 13:44:38 INFO  [error] ))), directCause=None)), directCause=None)), directCause=None)
+2023.09.01 13:44:38 INFO  [error] lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.12/sbt_1.0/0.9.3/srcs/sbt-git-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.12/sbt_1.0/0.9.3/srcs/sbt-git-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.12/sbt_1.0/0.6.2/srcs/sbt-ghpages-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.12/sbt_1.0/0.6.2/srcs/sbt-ghpages-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.12/sbt_1.0/1.4.2/srcs/sbt-web-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.12/sbt_1.0/1.4.2/srcs/sbt-web-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.10.0/srcs/sbt-buildinfo-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.10.0/srcs/sbt-buildinfo-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.12/sbt_1.0/1.3.1/srcs/sbt-site-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.12/sbt_1.0/1.3.1/srcs/sbt-site-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe/sbt-mima-plugin/scala_2.12/sbt_1.0/0.6.1/srcs/sbt-mima-plugin-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe/sbt-mima-plugin/scala_2.12/sbt_1.0/0.6.1/srcs/sbt-mima-plugin-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.lightbend.paradox/sbt-paradox/scala_2.12/sbt_1.0/0.3.0/srcs/sbt-paradox-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.lightbend.paradox/sbt-paradox/scala_2.12/sbt_1.0/0.3.0/srcs/sbt-paradox-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.15.0/srcs/sbt-assembly-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.15.0/srcs/sbt-assembly-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.1/srcs/sbt-unidoc-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.1/srcs/sbt-unidoc-sources.jar
+2023.09.01 13:44:38 INFO  [error] 
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.Artifacts$.$anonfun$fetchArtifacts$14(Artifacts.scala:302)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$2(Task.scala:14)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+2023.09.01 13:44:38 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2023.09.01 13:44:38 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2023.09.01 13:44:38 INFO  [error] 	at java.lang.Thread.run(Thread.java:750)
+2023.09.01 13:44:38 INFO  [error] Caused by: lmcoursier.internal.shaded.coursier.cache.ArtifactError$DownloadError: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.12/sbt_1.0/0.9.3/srcs/sbt-git-sources.jar
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.helper$2(FileCache.scala:1018)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.coursier$cache$FileCache$$downloading(FileCache.scala:1032)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.doDownload$1(FileCache.scala:320)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$54(FileCache.scala:507)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.loop$1(CacheLocks.scala:59)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.withLockOr(CacheLocks.scala:84)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$32(FileCache.scala:508)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+2023.09.01 13:44:38 INFO  [error] 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+2023.09.01 13:44:38 INFO  [error] 	at scala.util.Success.map(Try.scala:213)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+2023.09.01 13:44:38 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2023.09.01 13:44:38 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2023.09.01 13:44:38 INFO  [error] 	at java.lang.Thread.run(Thread.java:750)
+2023.09.01 13:44:38 INFO  [error] Caused by: java.net.UnknownHostException: repo.scala-sbt.org
+2023.09.01 13:44:38 INFO  [error] 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+2023.09.01 13:44:38 INFO  [error] 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+2023.09.01 13:44:38 INFO  [error] 	at java.net.Socket.connect(Socket.java:607)
+2023.09.01 13:44:38 INFO  [error] 	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:293)
+2023.09.01 13:44:38 INFO  [error] 	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:203)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1046)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1044)
+2023.09.01 13:44:38 INFO  [error] 	at java.security.AccessController.doPrivileged(Native Method)
+2023.09.01 13:44:38 INFO  [error] 	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:784)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1043)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:189)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1572)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:92)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1492)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1490)
+2023.09.01 13:44:38 INFO  [error] 	at java.security.AccessController.doPrivileged(Native Method)
+2023.09.01 13:44:38 INFO  [error] 	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:784)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1489)
+2023.09.01 13:44:38 INFO  [error] 	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+2023.09.01 13:44:38 INFO  [error] 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:352)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheUrl$.redirectTo(CacheUrl.scala:152)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheUrl$.redirect(CacheUrl.scala:162)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheUrl$.urlConnectionMaybePartial(CacheUrl.scala:304)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheUrl$.urlConnectionMaybePartial(CacheUrl.scala:277)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$33(FileCache.scala:349)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.$anonfun$downloading$1(FileCache.scala:998)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.withUrlLock(CacheLocks.scala:102)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.helper$2(FileCache.scala:998)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.coursier$cache$FileCache$$downloading(FileCache.scala:1032)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.doDownload$1(FileCache.scala:320)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$54(FileCache.scala:507)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.loop$1(CacheLocks.scala:59)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.withLockOr(CacheLocks.scala:84)
+2023.09.01 13:44:38 INFO  [error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$32(FileCache.scala:508)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+2023.09.01 13:44:38 INFO  [error] 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+2023.09.01 13:44:38 INFO  [error] 	at scala.util.Success.map(Try.scala:213)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+2023.09.01 13:44:38 INFO  [error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+2023.09.01 13:44:38 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+2023.09.01 13:44:38 INFO  [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+2023.09.01 13:44:38 INFO  [error] 	at java.lang.Thread.run(Thread.java:750)
+2023.09.01 13:44:38 INFO  [error] (updateClassifiers) lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.12/sbt_1.0/0.9.3/srcs/sbt-git-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-git/scala_2.12/sbt_1.0/0.9.3/srcs/sbt-git-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.12/sbt_1.0/0.6.2/srcs/sbt-ghpages-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-ghpages/scala_2.12/sbt_1.0/0.6.2/srcs/sbt-ghpages-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.12/sbt_1.0/1.4.2/srcs/sbt-web-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-web/scala_2.12/sbt_1.0/1.4.2/srcs/sbt-web-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.10.0/srcs/sbt-buildinfo-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-buildinfo/scala_2.12/sbt_1.0/0.10.0/srcs/sbt-buildinfo-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.12/sbt_1.0/1.3.1/srcs/sbt-site-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-site/scala_2.12/sbt_1.0/1.3.1/srcs/sbt-site-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe/sbt-mima-plugin/scala_2.12/sbt_1.0/0.6.1/srcs/sbt-mima-plugin-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe/sbt-mima-plugin/scala_2.12/sbt_1.0/0.6.1/srcs/sbt-mima-plugin-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.lightbend.paradox/sbt-paradox/scala_2.12/sbt_1.0/0.3.0/srcs/sbt-paradox-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.lightbend.paradox/sbt-paradox/scala_2.12/sbt_1.0/0.3.0/srcs/sbt-paradox-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.15.0/srcs/sbt-assembly-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.15.0/srcs/sbt-assembly-sources.jar
+2023.09.01 13:44:38 INFO  [error] https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.1/srcs/sbt-unidoc-sources.jar: download error: Caught java.net.UnknownHostException: repo.scala-sbt.org (repo.scala-sbt.org) while downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.1/srcs/sbt-unidoc-sources.jar
+2023.09.01 13:44:38 INFO  [error] Total time: 20 s, completed Sep 1, 2023 1:44:39 PM
+2023.09.01 13:44:38 INFO  Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? [info] loading settings for project rocketchip from build.sbt ...
+2023.09.01 13:44:40 INFO  [info] loading settings for project hardfloat from build.sbt ...
+2023.09.01 13:44:40 INFO  [info] loading settings for project api-config-chipsalliance from build.sbt ...
+2023.09.01 13:44:40 INFO  Using addons: 
+2023.09.01 13:44:40 INFO  [info] set current project to rocketchip (in build file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/)
+2023.09.01 13:44:44 INFO  [success] Generated .bloop/hardfloat.json
+2023.09.01 13:44:44 INFO  [success] Generated .bloop/rocket-macros.json
+2023.09.01 13:44:44 INFO  [success] Generated .bloop/api-config-chipsalliance.json
+2023.09.01 13:44:44 INFO  [success] Generated .bloop/hardfloat-test.json
+2023.09.01 13:44:44 INFO  [success] Generated .bloop/rocket-macros-test.json
+2023.09.01 13:44:44 INFO  [success] Generated .bloop/api-config-chipsalliance-test.json
+2023.09.01 13:44:56 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2023.09.01 13:44:56 INFO  [success] Generated .bloop/rocketchip.json
+2023.09.01 13:45:01 INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+2023.09.01 13:45:01 INFO  [success] Generated .bloop/rocketchip-test.json
+2023.09.01 13:45:01 INFO  [success] Generated .bloop/docs.json
+2023.09.01 13:45:01 INFO  [success] Generated .bloop/docs-test.json
+2023.09.01 13:45:01 INFO  [success] Total time: 21 s, completed Sep 1, 2023 1:45:01 PM
+2023.09.01 13:45:01 INFO  time: ran 'sbt bloopInstall' in 55s
+2023.09.01 13:45:01 INFO  Attempting to connect to the build server...
+2023.09.01 13:45:01 INFO  Setting up current java home /usr/lib/jvm/java-8-openjdk/jre in /home/bittervan/.bloop/bloop.json
+2023.09.01 13:45:12 INFO  Shutting down server
+2023.09.01 13:45:12 INFO  shutting down Metals
+2023.09.01 13:45:12 INFO  Exiting server
+2023.09.01 13:45:16 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 01, 2023 1:45:16 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 01, 2023 1:45:16 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 01, 2023 1:45:16 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 01, 2023 1:45:16 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 01, 2023 1:45:16 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 01, 2023 1:45:16 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 01, 2023 1:45:16 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.01 13:45:17 INFO  time: initialize in 0.24s
+Sep 01, 2023 1:45:17 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 01, 2023 1:45:17 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.01 13:45:17 INFO  Attempting to connect to the build server...
+2023.09.01 13:45:17 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.01 13:45:17 INFO  skipping build import with status 'Installed'
+2023.09.01 13:45:24 INFO  no build target found for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.01 13:45:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+Exception in thread "pool-3-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-3-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Sep 01, 2023 1:45:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15
+Exception in thread "pool-3-thread-3" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-3-thread-4" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-3-thread-5" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-3-thread-6" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2023.09.01 13:45:29 INFO  Attempting to connect to the build server...
+2023.09.01 13:45:29 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.01 13:45:29 INFO  Attempting to connect to the build server...
+2023.09.01 13:45:29 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.01 13:45:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.01 13:45:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.01 13:45:31 INFO  time: Connected to build server in 14s
+2023.09.01 13:45:31 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.01 13:45:31 ERROR Empty build targets. Expected at least one build target identifier.
+2023.09.01 13:45:31 ERROR Empty build targets. Expected at least one build target identifier.
+2023.09.01 13:45:31 ERROR Empty build targets. Expected at least one build target identifier.
+2023.09.01 13:45:31 ERROR Empty build targets. Expected at least one build target identifier.
+2023.09.01 13:45:36 INFO  no build target found for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala. Using presentation compiler with project's scala-library version: 2.12.15
+2023.09.01 13:45:36 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.01 13:45:39 INFO  compiling rocket-macros (1 scala source)
+2023.09.01 13:45:39 INFO  compiling api-config-chipsalliance (1 scala source)
+2023.09.01 13:45:39 INFO  compiling hardfloat (20 scala sources)
+2023.09.01 13:45:42 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.01 13:45:43 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.01 13:45:43 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.01 13:45:43 INFO  time: indexed workspace in 11s
+2023.09.01 13:45:45 INFO  time: compiled rocket-macros in 6.82s
+2023.09.01 13:45:45 INFO  time: compiled api-config-chipsalliance in 6.82s
+2023.09.01 13:45:48 WARN  535 feature warnings; re-run with -feature for details
+2023.09.01 13:45:48 INFO  time: compiled hardfloat in 9.84s
+2023.09.01 13:45:48 INFO  compiling rocketchip (339 scala sources)
+2023.09.01 13:46:15 INFO  compiling rocketchip-test (3 scala sources)
+2023.09.01 13:46:15 INFO  time: compiled rocketchip in 27s
+2023.09.01 13:46:15 INFO  time: compiled rocketchip-test in 0.83s
+Sep 01, 2023 2:07:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 208
+Sep 01, 2023 2:12:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 01, 2023 2:12:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 01, 2023 2:14:06 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.

@@ -14,4 +14,9 @@ docs-target/
 /testbuild/
 rocketchip.jar
 .metals/
-
+.vscode/
+*.vcd
+.bloop/
+project/metals.sbt
+project/project/
+log*

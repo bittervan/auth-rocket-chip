@@ -13,3 +13,4 @@ docs-target/
 /test_lib/
 /testbuild/
 rocketchip.jar
+.metal/

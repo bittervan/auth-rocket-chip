@@ -30,3 +30,4 @@ INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (e
 2023.09.01 09:05:43 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
 2023.09.01 09:05:52 INFO  no build target found for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala. Using presentation compiler with project's scala-library version: 3.3.0
 2023.09.01 09:06:05 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/scie/SCIE.scala
+2023.09.01 13:08:24 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/CSR.scala

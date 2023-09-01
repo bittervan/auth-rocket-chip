@@ -555,6 +555,9 @@ class CSRFile(
   val reg_hpmcounter = io.counters.zipWithIndex.map { case (c, i) =>
     WideCounter(CSR.hpmWidth, c.inc, reset = false, inhibit = reg_mcountinhibit(CSR.firstHPM+i)) }
 
+  val reg_dma_guard_keyl = RegInit(0.U(xLen.W))
+  val reg_dma_guard_keyh = RegInit(0.U(xLen.W))
+
   val mip = Wire(init=reg_mip)
   mip.lip := (io.interrupts.lip: Seq[Bool])
   mip.mtip := io.interrupts.mtip
@@ -665,6 +668,9 @@ class CSRFile(
   read_mapping ++= context_csrs
   read_mapping ++= fp_csrs
   read_mapping ++= vector_csrs
+
+  read_mapping += CSRs.dma_guard_keyh -> reg_dma_guard_keyh
+  read_mapping += CSRs.dma_guard_keyl -> reg_dma_guard_keyl
 
   if (coreParams.haveBasicCounters) {
     read_mapping += CSRs.mcountinhibit -> reg_mcountinhibit
@@ -1205,6 +1211,9 @@ class CSRFile(
         reg_mip.vssip := new_mip.vssip
       }
     }
+
+    when (decoded_addr(CSRs.dma_guard_keyh)) { reg_dma_guard_keyh := wdata }
+    when (decoded_addr(CSRs.dma_guard_keyl)) { reg_dma_guard_keyl := wdata }
     when (decoded_addr(CSRs.mie))      { reg_mie := wdata & supported_interrupts }
     when (decoded_addr(CSRs.mepc))     { reg_mepc := formEPC(wdata) }
     when (decoded_addr(CSRs.mscratch)) { reg_mscratch := wdata }

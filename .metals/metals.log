@@ -385,3 +385,137 @@ Sep 01, 2023 2:12:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 INFO: Unsupported notification method: $/setTrace
 Sep 01, 2023 2:14:06 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
 INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Sep 01, 2023 2:19:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 512
+Sep 01, 2023 2:19:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 525
+Sep 01, 2023 2:19:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 546
+2023.09.01 14:19:37 INFO  compiling rocketchip (1 scala source)
+2023.09.01 14:19:39 WARN  42 feature warnings; re-run with -feature for details
+2023.09.01 14:19:39 INFO  time: compiled rocketchip in 1.73s
+2023.09.01 14:25:36 INFO  compiling rocketchip (1 scala source)
+2023.09.01 14:25:37 INFO  time: compiled rocketchip in 1.14s
+2023.09.01 14:27:33 INFO  compiling rocketchip (1 scala source)
+2023.09.01 14:27:33 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/Instructions.scala
+2023.09.01 14:27:34 INFO  time: compiled rocketchip in 1.16s
+Sep 01, 2023 2:27:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1046
+Sep 01, 2023 2:28:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.UnsupportedOperationException: tail of empty list
+java.util.concurrent.CompletionException: java.lang.UnsupportedOperationException: tail of empty list
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.UnsupportedOperationException: tail of empty list
+	at scala.collection.immutable.Nil$.tail(List.scala:664)
+	at scala.collection.immutable.Nil$.tail(List.scala:661)
+	at scala.meta.internal.metals.codeactions.CreateCompanionObjectCodeAction.$anonfun$endPosOfTree$1(CreateCompanionObjectCodeAction.scala:77)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.CreateCompanionObjectCodeAction.endPosOfTree(CreateCompanionObjectCodeAction.scala:75)
+	at scala.meta.internal.metals.codeactions.CreateCompanionObjectCodeAction.$anonfun$contribute$5(CreateCompanionObjectCodeAction.scala:61)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.codeactions.CreateCompanionObjectCodeAction.$anonfun$contribute$4(CreateCompanionObjectCodeAction.scala:58)
+	at scala.Option$WithFilter.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.CreateCompanionObjectCodeAction.$anonfun$contribute$2(CreateCompanionObjectCodeAction.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.codeactions.CreateCompanionObjectCodeAction.$anonfun$contribute$1(CreateCompanionObjectCodeAction.scala:55)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.09.01 14:28:19 INFO  time: code lens generation in 1.05s
+2023.09.01 14:28:19 INFO  time: code lens generation in 1.04s
+2023.09.01 14:28:35 INFO  time: code lens generation in 4.03s
+2023.09.01 14:28:35 INFO  time: code lens generation in 3s
+2023.09.01 14:28:36 INFO  time: code lens generation in 4.28s
+2023.09.01 14:28:39 INFO  time: code lens generation in 4.76s
+2023.09.01 14:28:39 INFO  time: code lens generation in 5.37s
+2023.09.01 14:28:39 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/CSR.scala
+2023.09.01 14:28:41 INFO  compiling rocketchip (1 scala source)
+2023.09.01 14:28:41 ERROR text document: file:///home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/CSR.scala
+com.google.protobuf.InvalidProtocolBufferException: While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.
+	at com.google.protobuf.InvalidProtocolBufferException.truncatedMessage(InvalidProtocolBufferException.java:115)
+	at com.google.protobuf.CodedInputStream$StreamDecoder.refillBuffer(CodedInputStream.java:2771)
+	at com.google.protobuf.CodedInputStream$StreamDecoder.readStringRequireUtf8(CodedInputStream.java:2327)
+	at scala.meta.internal.semanticdb.TypeRef$.parseFrom(Type.scala:735)
+	at scala.meta.internal.semanticdb.TypeRef$.parseFrom(Type.scala:721)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.TypeMessage$.$anonfun$parseFrom$1(Type.scala:335)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.semanticdb.TypeMessage$.parseFrom(Type.scala:335)
+	at scala.meta.internal.semanticdb.TypeMessage$.parseFrom(Type.scala:325)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.TypeRef$.parseFrom(Type.scala:737)
+	at scala.meta.internal.semanticdb.TypeRef$.parseFrom(Type.scala:721)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.TypeMessage$.$anonfun$parseFrom$1(Type.scala:335)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.semanticdb.TypeMessage$.parseFrom(Type.scala:335)
+	at scala.meta.internal.semanticdb.TypeMessage$.parseFrom(Type.scala:325)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.TypeApplyTree$.parseFrom(Tree.scala:1340)
+	at scala.meta.internal.semanticdb.TypeApplyTree$.parseFrom(Tree.scala:1327)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.TreeMessage$.$anonfun$parseFrom$15(Tree.scala:221)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.semanticdb.TreeMessage$.parseFrom(Tree.scala:221)
+	at scala.meta.internal.semanticdb.TreeMessage$.parseFrom(Tree.scala:197)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.ApplyTree$.$anonfun$parseFrom$17(Tree.scala:464)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.semanticdb.ApplyTree$.parseFrom(Tree.scala:464)
+	at scala.meta.internal.semanticdb.ApplyTree$.parseFrom(Tree.scala:453)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.TreeMessage$.$anonfun$parseFrom$1(Tree.scala:207)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.semanticdb.TreeMessage$.parseFrom(Tree.scala:207)
+	at scala.meta.internal.semanticdb.TreeMessage$.parseFrom(Tree.scala:197)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.Synthetic$.$anonfun$parseFrom$3(Synthetic.scala:93)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.semanticdb.Synthetic$.parseFrom(Synthetic.scala:93)
+	at scala.meta.internal.semanticdb.Synthetic$.parseFrom(Synthetic.scala:80)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.TextDocument$.parseFrom(TextDocument.scala:244)
+	at scala.meta.internal.semanticdb.TextDocument$.parseFrom(TextDocument.scala:210)
+	at scalapb.LiteParser$.readMessage(LiteParser.scala:24)
+	at scala.meta.internal.semanticdb.TextDocuments$.parseFrom(TextDocuments.scala:69)
+	at scala.meta.internal.semanticdb.TextDocuments$.parseFrom(TextDocuments.scala:59)
+	at scalapb.GeneratedMessageCompanion.parseFrom(GeneratedMessageCompanion.scala:171)
+	at scalapb.GeneratedMessageCompanion.parseFrom$(GeneratedMessageCompanion.scala:171)
+	at scala.meta.internal.semanticdb.TextDocuments$.parseFrom(TextDocuments.scala:59)
+	at scala.meta.internal.mtags.Semanticdbs$.loadTextDocuments(Semanticdbs.scala:23)
+	at scala.meta.internal.mtags.Semanticdbs$.loadResolvedTextDocument(Semanticdbs.scala:66)
+	at scala.meta.internal.mtags.Semanticdbs$.loadTextDocument(Semanticdbs.scala:51)
+	at scala.meta.internal.metals.FileSystemSemanticdbs.textDocument(FileSystemSemanticdbs.scala:55)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1574)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1572)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023.09.01 14:28:41 INFO  time: code lens generation in 1.55s
+2023.09.01 14:28:42 WARN  42 feature warnings; re-run with -feature for details
+2023.09.01 14:28:42 INFO  time: compiled rocketchip in 1.48s
+2023.09.01 14:30:43 INFO  compiling rocketchip (1 scala source)
+2023.09.01 14:30:45 WARN  42 feature warnings; re-run with -feature for details
+2023.09.01 14:30:45 INFO  time: compiled rocketchip in 2.3s
+2023.09.01 14:33:07 INFO  compiling rocketchip (1 scala source)
+2023.09.01 14:33:09 INFO  time: compiled rocketchip in 1.26s

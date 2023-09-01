@@ -872,6 +872,8 @@ object CSRs {
   val cycle = 0xc00
   val time = 0xc01
   val instret = 0xc02
+  val dma_guard_keyl = 0x9c0
+  val dma_guard_keyh = 0x9c1
   val hpmcounter3 = 0xc03
   val hpmcounter4 = 0xc04
   val hpmcounter5 = 0xc05
@@ -1212,6 +1214,8 @@ object CSRs {
     res += cycle
     res += time
     res += instret
+    res += dma_guard_keyl
+    res += dma_guard_keyh
     res += hpmcounter3
     res += hpmcounter4
     res += hpmcounter5

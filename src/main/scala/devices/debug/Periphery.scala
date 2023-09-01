@@ -44,7 +44,7 @@ class ClockedAPBBundle(params: APBBundleParameters) extends APBBundle(params) {
 
 class DebugIO(implicit val p: Parameters) extends Bundle {
   val clock = Input(Clock())
-  val reset = Input(Reset())
+  val reset = Input(Bool())
   val clockeddmi = p(ExportDebug).dmi.option(Flipped(new ClockedDMIIO()))
   val systemjtag = p(ExportDebug).jtag.option(new SystemJTAGIO)
   val apb = p(ExportDebug).apb.option(Flipped(new ClockedAPBBundle(APBBundleParameters(addrBits=12, dataBits=32))))
@@ -170,7 +170,7 @@ trait HasPeripheryDebugModuleImp extends LazyModuleImp {
     outer.debugOpt.map { outerdebug => 
       outerdebug.module.io.dmi.get.dmi <> dtm.io.dmi
       outerdebug.module.io.dmi.get.dmiClock := sj.jtag.TCK
-      outerdebug.module.io.dmi.get.dmiReset := sj.reset
+      outerdebug.module.io.dmi.get.dmiReset := sj.reset.asBool
     }
     dtm
   }

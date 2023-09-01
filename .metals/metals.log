@@ -1,0 +1,32 @@
+2023.09.01 09:05:42 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.006s)
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Sep 01, 2023 9:05:42 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.006s)
+2023.09.01 09:05:42 INFO  time: initialize in 0.28s
+2023.09.01 09:05:42 WARN  Build server is not auto-connectable.
+2023.09.01 09:05:43 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala
+2023.09.01 09:05:52 INFO  no build target found for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/RocketCore.scala. Using presentation compiler with project's scala-library version: 3.3.0
+2023.09.01 09:06:05 WARN  no build target for: /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/scie/SCIE.scala

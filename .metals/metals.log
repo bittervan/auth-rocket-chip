@@ -519,3 +519,42 @@ com.google.protobuf.InvalidProtocolBufferException: While parsing a protocol mes
 2023.09.01 14:30:45 INFO  time: compiled rocketchip in 2.3s
 2023.09.01 14:33:07 INFO  compiling rocketchip (1 scala source)
 2023.09.01 14:33:09 INFO  time: compiled rocketchip in 1.26s
+2023.09.02 08:41:28 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 8:41:28 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 8:41:28 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 8:41:28 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 8:41:28 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 8:41:28 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 02, 2023 8:41:28 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 8:41:28 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 08:41:28 INFO  time: initialize in 0.24s
+Sep 02, 2023 8:41:28 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 08:41:28 INFO  Attempting to connect to the build server...
+2023.09.02 08:41:28 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 08:41:28 INFO  skipping build import with status 'Installed'
+2023.09.02 08:41:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 08:41:28 INFO  Attempting to connect to the build server...
+2023.09.02 08:41:28 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 08:41:28 INFO  Attempting to connect to the build server...
+2023.09.02 08:41:28 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 08:41:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 08:41:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 08:41:28 INFO  time: Connected to build server in 0.19s
+2023.09.02 08:41:28 INFO  Connected to Build server: Bloop v1.5.8
+Sep 02, 2023 8:41:29 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 8:41:29 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 08:41:28 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.02 08:41:30 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 08:41:30 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 08:41:30 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 08:41:30 INFO  time: indexed workspace in 1.76s

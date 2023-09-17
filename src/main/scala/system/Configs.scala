@@ -17,6 +17,7 @@ class BaseConfig extends Config(
   new WithTimebase(BigInt(1000000)) ++ // 1 MHz
   new WithDTS("freechips,rocketchip-unknown", Nil) ++
   new WithNExtTopInterrupts(2) ++
+  new WithDmaGuardRocc ++
   new BaseSubsystemConfig
 )
 

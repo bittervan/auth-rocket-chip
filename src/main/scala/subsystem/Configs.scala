@@ -11,6 +11,7 @@ import freechips.rocketchip.diplomacy._
 import freechips.rocketchip.rocket._
 import freechips.rocketchip.tile._
 import freechips.rocketchip.util._
+import freechips.rocketchip.rocc.dmaguard._
 
 class BaseSubsystemConfig extends Config ((site, here, up) => {
   // Tile parameters
@@ -86,6 +87,15 @@ class WithCoherentBusTopology extends Config((site, here, up) => {
       l2 = site(BankedL2Key),
       sbusToMbusXType = site(SbusToMbusXTypeKey),
       driveMBusClockFromSBus = site(DriveClocksFromSBus)))
+})
+
+class WithDmaGuardRocc extends Config((site, here, up) => {
+  case BuildRoCC => List(
+    (p: Parameters) => {
+      val dma_guard_engine = LazyModule(new DmaGuardSign(OpcodeSet.dma_guard_ext)(p))
+      dma_guard_engine
+    }
+  )
 })
 
 class WithNBigCores(n: Int, overrideIdOffset: Option[Int] = None) extends Config((site, here, up) => {

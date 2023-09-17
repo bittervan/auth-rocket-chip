@@ -558,3 +558,1212 @@ INFO: Unsupported notification method: $/setTrace
 2023.09.02 08:41:30 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
 2023.09.02 08:41:30 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
 2023.09.02 08:41:30 INFO  time: indexed workspace in 1.76s
+Sep 02, 2023 9:31:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "untitled://ssh-remote%2Bbvdesktop/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocc/DmaGuard.scala"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "untitled" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:631)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:628)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:604)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Sep 02, 2023 9:31:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "untitled://ssh-remote%2Bbvdesktop/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocc/DmaGuard.scala"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "untitled" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:631)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:628)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:604)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Sep 02, 2023 9:32:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "untitled://ssh-remote%2Bbvdesktop/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocc/DmaGuard.scala"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "untitled" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:631)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:628)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:604)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Sep 02, 2023 9:32:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "untitled://ssh-remote%2Bbvdesktop/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocc/DmaGuard.scala"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "untitled" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:631)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:628)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:604)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Sep 02, 2023 9:35:43 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:35:57 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:36:07 INFO  Shutting down server
+2023.09.02 09:36:07 INFO  shutting down Metals
+2023.09.02 09:36:07 INFO  Shut down connection with build server.
+2023.09.02 09:36:07 INFO  Shut down connection with build server.
+2023.09.02 09:36:07 INFO  Shut down connection with build server.
+2023.09.02 09:36:07 INFO  Exiting server
+2023.09.02 09:36:12 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 9:36:12 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 9:36:12 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 9:36:12 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 9:36:13 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 9:36:13 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 02, 2023 9:36:13 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 9:36:13 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 09:36:13 INFO  time: initialize in 0.24s
+2023.09.02 09:36:13 INFO  Attempting to connect to the build server...
+2023.09.02 09:36:13 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:36:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:36:13 INFO  Attempting to connect to the build server...
+2023.09.02 09:36:13 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:36:13 INFO  Attempting to connect to the build server...
+2023.09.02 09:36:13 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:36:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:36:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:36:13 INFO  time: Connected to build server in 0.11s
+2023.09.02 09:36:13 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.02 09:36:13 INFO  skipping build import with status 'Installed'
+2023.09.02 09:36:14 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.02 09:36:16 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:36:16 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:36:16 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:36:16 INFO  time: indexed workspace in 2.88s
+Sep 02, 2023 9:36:34 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:36:39 INFO  Shutting down server
+2023.09.02 09:36:39 INFO  shutting down Metals
+2023.09.02 09:36:39 INFO  Shut down connection with build server.
+2023.09.02 09:36:39 INFO  Shut down connection with build server.
+2023.09.02 09:36:39 INFO  Shut down connection with build server.
+2023.09.02 09:36:39 INFO  Exiting server
+2023.09.02 09:36:44 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 9:36:44 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 9:36:44 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 9:36:44 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 9:36:44 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 9:36:44 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 02, 2023 9:36:44 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 9:36:44 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 09:36:44 INFO  time: initialize in 0.24s
+2023.09.02 09:36:45 INFO  Attempting to connect to the build server...
+2023.09.02 09:36:45 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+Sep 02, 2023 9:36:45 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:36:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:36:45 INFO  Attempting to connect to the build server...
+2023.09.02 09:36:45 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:36:45 INFO  Attempting to connect to the build server...
+2023.09.02 09:36:45 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:36:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:36:45 INFO  skipping build import with status 'Installed'
+2023.09.02 09:36:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:36:45 INFO  time: Connected to build server in 0.16s
+2023.09.02 09:36:45 INFO  Connected to Build server: Bloop v1.5.8
+Sep 02, 2023 9:36:45 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:36:45 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:36:45 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:36:45 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.02 09:36:46 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:36:46 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:36:46 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:36:46 INFO  time: indexed workspace in 1.79s
+Sep 02, 2023 9:36:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "untitled://ssh-remote%2Bbvdesktop/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocc/DmaGuard.scala"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "untitled" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:631)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:628)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:604)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Sep 02, 2023 9:37:01 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:37:36 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:38:00 INFO  Shutting down server
+2023.09.02 09:38:00 INFO  shutting down Metals
+2023.09.02 09:38:00 INFO  Shut down connection with build server.
+2023.09.02 09:38:00 INFO  Shut down connection with build server.
+2023.09.02 09:38:00 INFO  Shut down connection with build server.
+2023.09.02 09:38:00 INFO  Exiting server
+2023.09.02 09:38:06 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 9:38:06 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 9:38:06 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 9:38:06 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 9:38:06 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 9:38:06 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 02, 2023 9:38:06 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 9:38:06 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 09:38:06 INFO  time: initialize in 0.24s
+Sep 02, 2023 9:38:06 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:38:06 INFO  Attempting to connect to the build server...
+2023.09.02 09:38:06 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:38:06 INFO  skipping build import with status 'Installed'
+2023.09.02 09:38:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:38:06 INFO  Attempting to connect to the build server...
+2023.09.02 09:38:06 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:38:06 INFO  Attempting to connect to the build server...
+2023.09.02 09:38:06 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:38:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:38:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:38:06 INFO  time: Connected to build server in 0.16s
+2023.09.02 09:38:06 INFO  Connected to Build server: Bloop v1.5.8
+Sep 02, 2023 9:38:06 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:38:06 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:38:06 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.02 09:38:08 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:38:08 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:38:08 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:38:08 INFO  time: indexed workspace in 1.78s
+Sep 02, 2023 9:39:06 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:39:18 INFO  Shutting down server
+2023.09.02 09:39:18 INFO  shutting down Metals
+2023.09.02 09:39:18 INFO  Shut down connection with build server.
+2023.09.02 09:39:18 INFO  Shut down connection with build server.
+2023.09.02 09:39:18 INFO  Shut down connection with build server.
+2023.09.02 09:39:18 INFO  Exiting server
+2023.09.02 09:39:23 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 9:39:23 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 9:39:23 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 9:39:23 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 9:39:24 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 9:39:24 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 02, 2023 9:39:24 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 9:39:24 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 09:39:24 INFO  time: initialize in 0.31s
+2023.09.02 09:39:24 INFO  Attempting to connect to the build server...
+2023.09.02 09:39:24 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:39:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:39:24 INFO  Attempting to connect to the build server...
+2023.09.02 09:39:24 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:39:24 INFO  Attempting to connect to the build server...
+2023.09.02 09:39:24 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:39:24 INFO  skipping build import with status 'Installed'
+2023.09.02 09:39:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:39:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:39:24 INFO  time: Connected to build server in 0.16s
+2023.09.02 09:39:24 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.02 09:39:24 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.02 09:39:26 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:39:26 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:39:26 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:39:26 INFO  time: indexed workspace in 1.82s
+Sep 02, 2023 9:39:35 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:39:45 INFO  Shutting down server
+2023.09.02 09:39:45 INFO  shutting down Metals
+2023.09.02 09:39:45 INFO  Shut down connection with build server.
+2023.09.02 09:39:45 INFO  Shut down connection with build server.
+2023.09.02 09:39:45 INFO  Shut down connection with build server.
+2023.09.02 09:39:45 INFO  Exiting server
+2023.09.02 09:39:50 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 9:39:50 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 9:39:50 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 9:39:50 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 9:39:50 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 9:39:51 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 02, 2023 9:39:51 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 9:39:51 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 09:39:51 INFO  time: initialize in 0.27s
+2023.09.02 09:39:51 INFO  Attempting to connect to the build server...
+2023.09.02 09:39:51 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:39:51 INFO  skipping build import with status 'Installed'
+2023.09.02 09:39:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:39:51 INFO  Attempting to connect to the build server...
+2023.09.02 09:39:51 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:39:51 INFO  Attempting to connect to the build server...
+2023.09.02 09:39:51 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:39:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:39:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:39:51 INFO  time: Connected to build server in 0.16s
+2023.09.02 09:39:51 INFO  Connected to Build server: Bloop v1.5.8
+Sep 02, 2023 9:39:51 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:39:51 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:39:51 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:39:51 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.02 09:39:53 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:39:53 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:39:53 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:39:53 INFO  time: indexed workspace in 1.87s
+Sep 02, 2023 9:41:09 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:41:15 INFO  Shutting down server
+2023.09.02 09:41:15 INFO  shutting down Metals
+2023.09.02 09:41:15 INFO  Shut down connection with build server.
+2023.09.02 09:41:15 INFO  Shut down connection with build server.
+2023.09.02 09:41:15 INFO  Shut down connection with build server.
+2023.09.02 09:41:15 INFO  Exiting server
+2023.09.02 09:41:20 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 9:41:20 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 9:41:20 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 9:41:20 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 9:41:21 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 9:41:21 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.009s)
+Sep 02, 2023 9:41:21 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 9:41:21 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 09:41:21 INFO  time: initialize in 0.26s
+2023.09.02 09:41:21 INFO  Attempting to connect to the build server...
+2023.09.02 09:41:21 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:41:21 INFO  skipping build import with status 'Installed'
+2023.09.02 09:41:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:41:21 INFO  Attempting to connect to the build server...
+2023.09.02 09:41:21 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:41:21 INFO  Attempting to connect to the build server...
+2023.09.02 09:41:21 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:41:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:41:21 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:41:21 INFO  time: Connected to build server in 0.16s
+2023.09.02 09:41:21 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.02 09:41:21 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.02 09:41:23 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:41:23 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:41:23 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:41:23 INFO  time: indexed workspace in 1.82s
+Sep 02, 2023 9:43:41 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:43:48 INFO  Shutting down server
+2023.09.02 09:43:48 INFO  shutting down Metals
+2023.09.02 09:43:48 INFO  Shut down connection with build server.
+2023.09.02 09:43:48 INFO  Shut down connection with build server.
+2023.09.02 09:43:48 INFO  Shut down connection with build server.
+2023.09.02 09:43:48 INFO  Exiting server
+2023.09.02 09:43:53 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 9:43:53 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 9:43:53 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 9:43:53 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 9:43:53 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 9:43:53 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.008s)
+Sep 02, 2023 9:43:53 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 9:43:53 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 09:43:53 INFO  time: initialize in 0.24s
+2023.09.02 09:43:53 INFO  Attempting to connect to the build server...
+2023.09.02 09:43:53 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:43:54 INFO  skipping build import with status 'Installed'
+2023.09.02 09:43:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:43:53 INFO  Attempting to connect to the build server...
+2023.09.02 09:43:53 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:43:53 INFO  Attempting to connect to the build server...
+2023.09.02 09:43:53 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:43:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:43:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:43:54 INFO  time: Connected to build server in 0.24s
+2023.09.02 09:43:54 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.02 09:43:54 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.02 09:43:56 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:43:56 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:43:56 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:43:56 INFO  time: indexed workspace in 1.81s
+Sep 02, 2023 9:44:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "untitled://ssh-remote%2Bbvdesktop/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocc/DmaGuard.scala"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "untitled" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:631)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:628)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:604)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Sep 02, 2023 9:45:43 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:45:43 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:45:48 INFO  Shutting down server
+2023.09.02 09:45:48 INFO  shutting down Metals
+2023.09.02 09:45:48 INFO  Shut down connection with build server.
+2023.09.02 09:45:48 INFO  Shut down connection with build server.
+2023.09.02 09:45:48 INFO  Shut down connection with build server.
+2023.09.02 09:45:48 INFO  Exiting server
+2023.09.02 09:45:53 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 9:45:54 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 9:45:54 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 9:45:54 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 9:45:54 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 9:45:54 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.009s)
+Sep 02, 2023 9:45:54 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 9:45:54 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 09:45:54 INFO  time: initialize in 0.26s
+2023.09.02 09:45:54 INFO  Attempting to connect to the build server...
+2023.09.02 09:45:54 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:45:54 INFO  skipping build import with status 'Installed'
+2023.09.02 09:45:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:45:54 INFO  Attempting to connect to the build server...
+2023.09.02 09:45:54 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:45:54 INFO  Attempting to connect to the build server...
+2023.09.02 09:45:54 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 09:45:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:45:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 09:45:54 INFO  time: Connected to build server in 0.17s
+2023.09.02 09:45:54 INFO  Connected to Build server: Bloop v1.5.8
+Sep 02, 2023 9:45:54 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:45:54 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 9:45:54 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:45:54 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+Sep 02, 2023 9:45:55 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 09:45:56 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:45:56 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:45:56 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 09:45:56 INFO  time: indexed workspace in 1.71s
+Sep 02, 2023 10:04:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "untitled://ssh-remote%2Bbvdesktop/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocc/DmaGuard.scala"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "untitled" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:631)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:628)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:604)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+2023.09.02 10:04:42 INFO  compiling rocketchip (1 scala source)
+2023.09.02 10:04:42 INFO  time: compiled rocketchip in 0.28s
+2023.09.02 10:04:42 INFO  compiling rocketchip (1 scala source)
+2023.09.02 10:04:42 INFO  time: compiled rocketchip in 0.23s
+2023.09.02 10:04:52 INFO  compiling rocketchip (1 scala source)
+2023.09.02 10:04:52 INFO  time: compiled rocketchip in 0.13s
+Sep 02, 2023 10:04:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 39
+Sep 02, 2023 10:04:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 99
+2023.09.02 10:05:03 INFO  compiling rocketchip (1 scala source)
+2023.09.02 10:05:03 INFO  time: compiled rocketchip in 0.13s
+Sep 02, 2023 10:07:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "untitled://ssh-remote%2Bbvdesktop/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocc/QARMA.scala"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "untitled" not installed
+	at java.nio.file.Paths.get(Paths.java:147)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:187)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:631)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:628)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:604)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+2023.09.02 10:07:28 INFO  compiling rocketchip (2 scala sources)
+2023.09.02 10:07:28 INFO  time: compiled rocketchip in 0.22s
+2023.09.02 10:07:28 INFO  compiling rocketchip (2 scala sources)
+2023.09.02 10:07:28 INFO  time: compiled rocketchip in 0.21s
+2023.09.02 10:07:31 INFO  compiling rocketchip (2 scala sources)
+2023.09.02 10:07:33 WARN  70 feature warnings; re-run with -feature for details
+2023.09.02 10:07:33 INFO  time: compiled rocketchip in 1.45s
+Sep 02, 2023 10:12:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 337
+2023.09.02 11:13:09 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:13:09 INFO  time: compiled rocketchip in 88ms
+2023.09.02 11:13:22 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:13:22 INFO  time: compiled rocketchip in 92ms
+2023.09.02 11:13:50 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:13:50 INFO  time: compiled rocketchip in 0.1s
+2023.09.02 11:14:20 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:14:20 INFO  time: compiled rocketchip in 86ms
+Sep 02, 2023 11:14:46 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Sep 02, 2023 11:14:46 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Sep 02, 2023 11:15:32 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Sep 02, 2023 11:15:37 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.09.02 11:16:20 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:16:20 INFO  time: compiled rocketchip in 89ms
+Sep 02, 2023 11:16:23 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.09.02 11:16:54 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:16:54 INFO  time: compiled rocketchip in 85ms
+2023.09.02 11:16:57 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:16:57 INFO  time: compiled rocketchip in 86ms
+2023.09.02 11:17:20 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:17:20 INFO  time: compiled rocketchip in 94ms
+Sep 02, 2023 11:17:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1719
+2023.09.02 11:19:44 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:19:44 INFO  time: compiled rocketchip in 77ms
+2023.09.02 11:19:53 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:19:53 INFO  time: compiled rocketchip in 81ms
+Sep 02, 2023 11:20:59 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.09.02 11:21:05 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:21:05 WARN  8 feature warnings; re-run with -feature for details
+2023.09.02 11:21:05 INFO  time: compiled rocketchip in 0.71s
+Sep 02, 2023 11:54:57 AM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.09.02 11:55:01 INFO  compiling rocketchip (1 scala source)
+2023.09.02 11:55:01 WARN  8 feature warnings; re-run with -feature for details
+2023.09.02 11:55:01 INFO  time: compiled rocketchip in 0.71s
+2023.09.02 12:01:54 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:01:55 INFO  time: compiled rocketchip in 1.29s
+Sep 02, 2023 12:02:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2603
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2805
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2806
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2807
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2809
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2810
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2811
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2812
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2813
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2814
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2815
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2816
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2817
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2818
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2819
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2820
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2822
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2823
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2824
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2825
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2826
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2827
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2828
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2829
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2830
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2831
+Sep 02, 2023 12:03:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2832
+Sep 02, 2023 12:03:30 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Sep 02, 2023 12:03:32 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Sep 02, 2023 12:03:34 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Sep 02, 2023 12:03:34 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.09.02 12:03:50 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:03:50 INFO  time: compiled rocketchip in 55ms
+2023.09.02 12:03:50 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 INFO  time: compiled rocketchip in 34ms
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:53 INFO  time: compiled rocketchip in 4ms
+2023.09.02 12:03:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:03:54 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:23 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+Exception in thread "pool-6-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+Exception in thread "pool-6-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+Exception in thread "pool-6-thread-3" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:229)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 INFO  time: compiled rocketchip in 50ms
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:27 INFO  time: compiled rocketchip in 57ms
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:27 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:28 WARN  Using indexes to guess the definition of DmaGuardSignInst
+2023.09.02 12:04:28 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:28 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:28 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:28 WARN  Using indexes to guess the definition of DmaGuardSignInst
+2023.09.02 12:04:30 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:46 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:49 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:49 WARN  Using indexes to guess the definition of A2_ZERO
+2023.09.02 12:04:49 INFO  time: compiled rocketchip in 50ms
+2023.09.02 12:04:49 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:49 INFO  time: compiled rocketchip in 41ms
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:49 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:49 INFO  time: compiled rocketchip in 42ms
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:48 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:49 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:49 WARN  Using indexes to guess the definition of opcode
+2023.09.02 12:04:50 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:50 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:49 WARN  Using indexes to guess the definition of opcode
+2023.09.02 12:04:51 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:53 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:53 INFO  time: compiled rocketchip in 69ms
+2023.09.02 12:04:53 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:53 INFO  time: compiled rocketchip in 52ms
+2023.09.02 12:04:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:54 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:54 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:54 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:54 INFO  time: compiled rocketchip in 50ms
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:04:58 INFO  time: compiled rocketchip in 43ms
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Using indexes to guess the definition of opcode
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:04:58 WARN  Using indexes to guess the definition of opcode
+2023.09.02 12:05:13 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:05:16 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:05:21 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:06:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:01 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:01 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:03 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:08 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:09 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:09 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:12 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:17 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:19 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:21 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:22 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:26 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:31 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:41 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:43 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:45 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:45 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:52 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:53 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:54 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:57 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:57 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:07:59 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:01 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:02 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:03 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:10 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:15 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:41 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:42 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:45 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:46 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:08:46 INFO  time: compiled rocketchip in 0.17s
+2023.09.02 12:08:46 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+Sep 02, 2023 12:08:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3802
+2023.09.02 12:08:52 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:54 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:55 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:56 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:08:58 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:08:58 INFO  time: compiled rocketchip in 0.17s
+2023.09.02 12:08:58 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:01 WARN  Using indexes to guess the definition of DmaGuardSignInst
+2023.09.02 12:09:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:01 WARN  Using indexes to guess the definition of DmaGuardSignInst
+Sep 02, 2023 12:09:01 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.09.02 12:09:03 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:08 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:09 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:11 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:12 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:12 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:14 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:15 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:09:15 INFO  time: compiled rocketchip in 0.21s
+2023.09.02 12:09:16 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:19 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:19 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:19 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:19 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:19 WARN  Using indexes to guess the definition of DmaGuardSignInst
+2023.09.02 12:09:19 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:19 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:09:20 WARN  Using indexes to guess the definition of DmaGuardSignInst
+Sep 02, 2023 12:09:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3960
+2023.09.02 12:09:21 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:10:00 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:10:15 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:10:15 INFO  compiling rocketchip (1 scala source)
+2023.09.02 12:10:16 WARN  Could not load snapshot text for /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/src/main/scala/rocket/IDecode.scala
+2023.09.02 12:10:17 INFO  time: compiled rocketchip in 1.27s
+Sep 02, 2023 12:10:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4032
+Sep 02, 2023 1:06:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4208
+Sep 02, 2023 1:06:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4333
+2023.09.02 13:06:33 INFO  compiling rocketchip (1 scala source)
+2023.09.02 13:06:34 WARN  42 feature warnings; re-run with -feature for details
+2023.09.02 13:06:34 INFO  time: compiled rocketchip in 1.76s
+2023.09.02 13:09:18 INFO  compiling rocketchip (1 scala source)
+2023.09.02 13:09:20 WARN  42 feature warnings; re-run with -feature for details
+2023.09.02 13:09:20 INFO  time: compiled rocketchip in 2.3s
+Sep 02, 2023 1:13:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4552
+Sep 02, 2023 1:14:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/.reports/metals-full/2023-09-02/r_compiler-error_13-14-09-608
+Sep 02, 2023 1:14:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/.reports/metals-full/2023-09-02/r_compiler-error_13-14-10-057
+Sep 02, 2023 1:14:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/.reports/metals-full/2023-09-02/r_compiler-error_13-14-13-020
+Sep 02, 2023 1:14:13 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/.reports/metals-full/2023-09-02/r_compiler-error_13-14-13-232
+Sep 02, 2023 1:15:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5011
+Sep 02, 2023 1:16:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5322
+Sep 02, 2023 1:16:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5357
+Sep 02, 2023 1:16:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5400
+Sep 02, 2023 1:16:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5398
+Sep 02, 2023 1:16:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5426
+Sep 02, 2023 1:16:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5428
+Sep 02, 2023 1:16:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5430
+2023.09.02 13:16:58 INFO  compiling rocketchip (1 scala source)
+2023.09.02 13:17:01 WARN  32 feature warnings; re-run with -feature for details
+2023.09.02 13:17:01 INFO  time: compiled rocketchip in 2.34s
+2023.09.02 13:17:10 INFO  compiling rocketchip (1 scala source)
+2023.09.02 13:17:10 INFO  time: compiled rocketchip in 46ms
+2023.09.02 13:17:16 INFO  compiling rocketchip (1 scala source)
+2023.09.02 13:17:16 INFO  time: compiled rocketchip in 47ms
+2023.09.02 13:17:31 INFO  compiling rocketchip (1 scala source)
+2023.09.02 13:17:31 INFO  time: compiled rocketchip in 0.17s
+2023.09.02 13:17:43 INFO  compiling rocketchip (1 scala source)
+2023.09.02 13:17:45 INFO  time: compiled rocketchip in 1.44s
+Sep 02, 2023 1:18:42 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Exception in thread "pool-6-thread-4" java.lang.Error: scala.tools.nsc.interactive.ShutdownReq$
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: scala.tools.nsc.interactive.ShutdownReq$
+Sep 02, 2023 1:19:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5676
+2023.09.02 13:19:24 INFO  compiling rocketchip (1 scala source)
+2023.09.02 13:19:24 INFO  time: compiled rocketchip in 0.66s
+2023.09.02 14:54:25 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 02, 2023 2:54:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 02, 2023 2:54:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 02, 2023 2:54:25 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 02, 2023 2:54:25 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 02, 2023 2:54:25 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.012s)
+Sep 02, 2023 2:54:25 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 02, 2023 2:54:25 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.02 14:54:25 INFO  time: initialize in 0.15s
+2023.09.02 14:54:25 INFO  Attempting to connect to the build server...
+2023.09.02 14:54:25 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 14:54:25 INFO  skipping build import with status 'Installed'
+2023.09.02 14:54:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 14:54:25 INFO  Attempting to connect to the build server...
+2023.09.02 14:54:25 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 14:54:25 INFO  Attempting to connect to the build server...
+2023.09.02 14:54:25 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.02 14:54:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 14:54:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.02 14:54:25 INFO  time: Connected to build server in 0.13s
+2023.09.02 14:54:25 INFO  Connected to Build server: Bloop v1.5.8
+2023.09.02 14:54:25 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+Sep 02, 2023 2:54:26 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 2:54:26 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 2:54:26 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 02, 2023 2:54:26 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.09.02 14:54:27 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 14:54:27 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 14:54:27 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.02 14:54:27 INFO  time: indexed workspace in 1.98s
+2023.09.02 14:59:20 INFO  Shutting down server
+2023.09.02 14:59:20 INFO  shutting down Metals
+2023.09.02 14:59:20 INFO  Shut down connection with build server.
+2023.09.02 14:59:20 INFO  Shut down connection with build server.
+2023.09.02 14:59:20 INFO  Shut down connection with build server.
+2023.09.02 14:59:20 INFO  Exiting server
+2023.09.02 16:14:47 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.09.02 16:14:47 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.09.02 16:14:47 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+2023.09.02 16:14:47 WARN  sql closed: select build_target_uri from dependency_source where text_document_uri = ?;
+Sep 02, 2023 5:13:57 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.09.02 17:15:26 INFO  compiling rocketchip (1 scala source)
+2023.09.02 17:15:26 WARN  8 feature warnings; re-run with -feature for details
+2023.09.02 17:15:26 INFO  time: compiled rocketchip in 0.73s
+2023.09.02 17:15:48 INFO  compiling rocketchip (1 scala source)
+2023.09.02 17:15:48 WARN  8 feature warnings; re-run with -feature for details
+2023.09.02 17:15:48 INFO  time: compiled rocketchip in 0.72s
+2023.09.02 17:20:55 INFO  compiling rocketchip (1 scala source)
+2023.09.02 17:20:55 WARN  8 feature warnings; re-run with -feature for details
+2023.09.02 17:20:55 INFO  time: compiled rocketchip in 0.72s
+Sep 02, 2023 5:22:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 477
+2023.09.03 03:12:50 INFO  Shutting down server
+2023.09.03 03:12:50 INFO  shutting down Metals
+2023.09.03 03:12:50 INFO  Shut down connection with build server.
+2023.09.03 03:12:50 INFO  Shut down connection with build server.
+2023.09.03 03:12:50 INFO  Shut down connection with build server.
+2023.09.03 03:12:50 INFO  Exiting server
+2023.09.04 15:46:31 INFO  Started: Metals version 1.0.1 in folders '/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip' for client Visual Studio Code 1.81.1.
+Sep 04, 2023 3:46:31 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 04, 2023 3:46:31 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 04, 2023 3:46:31 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 04, 2023 3:46:31 PM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/metals (H2 2.1)
+Sep 04, 2023 3:46:31 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.009s)
+Sep 04, 2023 3:46:31 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Sep 04, 2023 3:46:31 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.09.04 15:46:31 INFO  time: initialize in 0.26s
+2023.09.04 15:46:31 INFO  Attempting to connect to the build server...
+2023.09.04 15:46:31 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.04 15:46:31 INFO  skipping build import with status 'Installed'
+2023.09.04 15:46:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.04 15:46:31 INFO  Attempting to connect to the build server...
+2023.09.04 15:46:31 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.04 15:46:31 INFO  Attempting to connect to the build server...
+2023.09.04 15:46:31 INFO  Bloop uses /usr/lib/jvm/java-8-openjdk/jre defined at /home/bittervan/.bloop/bloop.json
+2023.09.04 15:46:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.04 15:46:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/bittervan/Hardware/add-instruction/vivado-risc-v/rocket-chip/project/.metals/bsp.trace.json or /home/bittervan/.cache/metals/bsp.trace.json
+2023.09.04 15:46:32 INFO  time: Connected to build server in 0.12s
+2023.09.04 15:46:32 INFO  Connected to Build server: Bloop v1.5.8
+Sep 04, 2023 3:46:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Sep 04, 2023 3:46:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2023.09.04 15:46:33 WARN  2.12.10 is no longer supported in the current Metals versions, using the last known supported version 0.11.12
+2023.09.04 15:46:34 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.04 15:46:34 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.04 15:46:34 WARN  Could not find java sources in /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip, /usr/lib/jvm/java-8-openjdk/src.zip, /usr/lib/jvm/java-8-openjdk/lib/src.zip, /usr/lib/jvm/java-8-openjdk/jre/src.zip, /usr/lib/jvm/java-8-openjdk/jre/lib/src.zip. Java symbols will not be available.
+2023.09.04 15:46:34 INFO  time: indexed workspace in 2.79s

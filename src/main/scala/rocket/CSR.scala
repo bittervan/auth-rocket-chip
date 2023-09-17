@@ -558,6 +558,10 @@ class CSRFile(
   val reg_dma_guard_keyl = RegInit(0.U(xLen.W))
   val reg_dma_guard_keyh = RegInit(0.U(xLen.W))
 
+  import chisel3.util.experimental.BoringUtils
+  BoringUtils.addSource(reg_dma_guard_keyl, "csr_dma_guard_keyl")
+  BoringUtils.addSource(reg_dma_guard_keyh, "csr_dma_guard_keyh")
+
   val mip = Wire(init=reg_mip)
   mip.lip := (io.interrupts.lip: Seq[Bool])
   mip.mtip := io.interrupts.mtip

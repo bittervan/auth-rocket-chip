@@ -26,8 +26,8 @@ class DmaGuardSignMultiCycleImp(outer: DmaGuardSign)(implicit p: Parameters) ext
   BoringUtils.addSink(csr_dma_guard_keyh, "csr_dma_guard_keyh")
   BoringUtils.addSink(csr_dma_guard_keyl, "csr_dma_guard_keyl")
 
-  val pec_engine = Module(new QarmaMultiCycle(7))
-  pec_engine.input.bits.actual_round  := 7.U(3.W)
+  val pec_engine = Module(new QarmaMultiCycle(3))
+  pec_engine.input.bits.actual_round  := 3.U(3.W)
 
   val rd = RegInit(0.U(5.W))
   val busy = RegInit(false.B)
@@ -86,7 +86,7 @@ class DmaGuardSignMultiCycleImp(outer: DmaGuardSign)(implicit p: Parameters) ext
   } 
 
   io.resp.bits.rd   := rd
-  io.resp.bits.data := (result << 48) | text
+  io.resp.bits.data := (result << 54) | text
 
   io.cmd.ready  := !busy
   io.busy       := busy
